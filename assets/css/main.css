@@ -3,3 +3,9 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 }
+
+ul.categories js-submenu-dir-list li:last-child {
+	position: fixed;
+    right: 10px;
+    background-color: #5baaa1;
+}
