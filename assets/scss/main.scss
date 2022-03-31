@@ -59,8 +59,10 @@ body {
                     &:hover {
                         background-color: lighten($zy-primary, 30%);
                     }
-                    span {
+                    span.secondary-menu__link {
                         padding: 0px;
+                        text-transform: initial;
+                        font-size: 14px;
                         span {
                             padding: 0px;
                             .secondary-menu__text {

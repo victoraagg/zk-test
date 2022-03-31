@@ -56,18 +56,20 @@ body nav.secondary-menu--directory ul.categories li:last-child svg {
   body nav.secondary-menu--directory ul.categories li.secondary-menu__item:hover {
     background-color: #c0dedb;
   }
-  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span {
-    padding: 0px;
-  }
-  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span span {
-    padding: 0px;
-  }
-  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span span .secondary-menu__text {
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span.secondary-menu__link {
     padding: 0px;
     text-transform: initial;
     font-size: 14px;
   }
-  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span span .secondary-menu__text::after {
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span.secondary-menu__link span {
+    padding: 0px;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span.secondary-menu__link span .secondary-menu__text {
+    padding: 0px;
+    text-transform: initial;
+    font-size: 14px;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span.secondary-menu__link span .secondary-menu__text::after {
     background-color: transparent;
   }
   body nav.secondary-menu--directory .js-submenu-input-what {

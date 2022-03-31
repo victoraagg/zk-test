@@ -27,18 +27,33 @@ function calcMenuWidth(resize) {
 	if($menuList.hasClass('list-overflow')){
 		$($viewMore).removeClass('is__hidden');
 	}
-
-	$($viewMore).click(function(){
-		$menuItem.each(function() {
-			if( $(this).hasClass('is__hidden') ){
-				$(this).removeClass('is__hidden');
-			}else{
-				$(this).addClass('is__hidden');
-			}
-		});
-	});
 		
 }
+
+$('.js-submenu-dir-more').click(function(){
+
+	var $menu = $('.js-submenu-dir');
+	var $viewMore = $('.js-submenu-dir-more');
+	var $inputWhere = $('.js-submenu-input-where');
+	var $menuList = $('.js-submenu-dir-list');
+
+	var moreWidth = $viewMore.outerWidth(true);
+	var inputWhereWidth = $inputWhere.outerWidth(true);
+	var availableSpace = $menu.width() - moreWidth - inputWhereWidth;
+	var navWidth = 0;
+
+	$($menuList).css('padding-right', $($viewMore).outerWidth(true)+"px");
+
+	$('.js-submenu-dir-category').each(function() {
+		if($(this).hasClass('is__hidden') && (navWidth < availableSpace)){
+			navWidth += $(this).outerWidth(true)+10;
+			$(this).removeClass('is__hidden');
+		}else{
+			$(this).addClass('is__hidden');
+		}
+	});
+
+});
 
 $(window).on('resize', function(e) {
 	calcMenuWidth(e);
