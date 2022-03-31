@@ -42,7 +42,7 @@ $('.js-submenu-dir-more').click(function(){
 	var availableSpace = $menu.width() - moreWidth - inputWhereWidth;
 	var navWidth = 0;
 
-	$($menuList).css('padding-right', $($viewMore).outerWidth(true)+"px");
+	//$($menuList).css('padding-right', $($viewMore).outerWidth(true)+"px");
 
 	$('.js-submenu-dir-category').each(function() {
 		if($(this).hasClass('is__hidden') && (navWidth < availableSpace)){
