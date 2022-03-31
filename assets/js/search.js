@@ -21,6 +21,17 @@ function calcMenuWidth(resize) {
 				$(this).addClass('is__hidden');
 			}
 		});
+
+		$($viewMore).click(function(){
+			$menuItem.each(function() {
+				if( $(this).hasClass('is__hidden') ){
+					$(this).removeClass('is__hidden');
+				}else{
+					$(this).addClass('is__hidden');
+				}
+			});
+		});
+		
 	}
 }
 
