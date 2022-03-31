@@ -6,7 +6,6 @@ function calcMenuWidth(resize) {
 	var $inputWhere = $('.js-submenu-input-where');
 	var $menuList = $('.js-submenu-dir-list');
 
-	var listWidth = $menuList.outerWidth(true);
 	var moreWidth = $viewMore.outerWidth(true);
 	var inputWhereWidth = $inputWhere.outerWidth(true);
 	var availableSpace = $menu.width() - moreWidth - inputWhereWidth;
