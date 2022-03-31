@@ -1,11 +1,77 @@
-/* CSS Stuff */
 body {
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
 }
-
-ul.categories js-submenu-dir-list li:last-child {
-	position: fixed;
-    right: 10px;
-    background-color: #5baaa1;
+body nav.secondary-menu--directory {
+  padding-bottom: 5px;
+}
+body nav.secondary-menu--directory ul.categories li:last-child {
+  position: fixed;
+  right: 10px;
+  background-color: #5baaa1;
+  color: white;
+  border: 0px solid transparent;
+  font-size: 14px;
+}
+body nav.secondary-menu--directory ul.categories li:last-child svg {
+  display: none;
+}
+@media (max-width: 767px) {
+  body nav.secondary-menu--directory {
+    display: inline-block;
+  }
+  body nav.secondary-menu--directory .js-submenu-input-where {
+    width: auto;
+    display: inline-block;
+    padding-right: 10px;
+    border-right: 1px solid #dcdcdc;
+    vertical-align: top;
+  }
+  body nav.secondary-menu--directory .js-submenu-input-where .search .search__input {
+    border-right: 0px solid transparent;
+    border-radius: 25px;
+    background-color: #dcdcdc;
+  }
+  body nav.secondary-menu--directory .js-submenu-input-where .search .search__input .js-get-location {
+    display: none;
+  }
+  body nav.secondary-menu--directory ul.categories {
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item {
+    float: left;
+    border: 1px solid #dcdcdc;
+    border-radius: 25px;
+    margin-right: 10px;
+    padding: 0px;
+    padding: 10px 12px;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item:first-child {
+    color: #5baaa1;
+    background-color: #d1e7e4;
+    border: 0px solid transparent;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item:hover {
+    background-color: #c0dedb;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span {
+    padding: 0px;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span span {
+    padding: 0px;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span span .secondary-menu__text {
+    padding: 0px;
+    text-transform: initial;
+    font-size: 14px;
+  }
+  body nav.secondary-menu--directory ul.categories li.secondary-menu__item span span .secondary-menu__text::after {
+    background-color: transparent;
+  }
+  body nav.secondary-menu--directory .js-submenu-input-what {
+    display: none;
+    visibility: hidden;
+  }
 }

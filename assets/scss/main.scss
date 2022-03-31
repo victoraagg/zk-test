@@ -1,0 +1,85 @@
+$zy-primary: #5baaa1;
+$grey: #dcdcdc;
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+    nav.secondary-menu--directory {
+        padding-bottom: 5px;
+        ul.categories{
+            li {
+                &:last-child {
+                    position: fixed;
+                    right: 10px;
+                    background-color: $zy-primary; 
+                    color: white;
+                    border: 0px solid transparent;
+                    font-size: 14px;
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            display: inline-block;
+            .js-submenu-input-where {
+                width: auto;
+                display: inline-block;
+                padding-right: 10px;
+                border-right: 1px solid $grey;
+                vertical-align: top;
+                .search {
+                    .search__input {
+                        border-right: 0px solid transparent;
+                        border-radius: 25px;
+                        background-color: $grey;
+                        .js-get-location {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            ul.categories {
+                width: auto;
+                display: inline-block;
+                margin-left: 10px;
+                li.secondary-menu__item {
+                    float: left;
+                    border: 1px solid $grey;
+                    border-radius: 25px;
+                    margin-right: 10px;
+                    padding: 0px;
+                    padding: 10px 12px;
+                    &:first-child {
+                        color: $zy-primary;
+                        background-color: lighten($zy-primary, 35%);
+                        border: 0px solid transparent;
+                    }
+                    &:hover {
+                        background-color: lighten($zy-primary, 30%);
+                    }
+                    span {
+                        padding: 0px;
+                        span {
+                            padding: 0px;
+                            .secondary-menu__text {
+                                padding: 0px;
+                                text-transform: initial;
+                                font-size: 14px;
+                                &::after {
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .js-submenu-input-what {
+                display: none;
+                visibility: hidden;
+            }
+        }
+    }
+    
+}
